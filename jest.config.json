@@ -1,0 +1,19 @@
+{
+    "verbose": true,
+    "collectCoverageFrom": [
+        "./src/**/*.*",
+        "!**/node_modules/**",
+        "!**/vendor/**"
+    ],
+    "plugins": ["transform-decorators-legacy"],
+    "transform": {
+        "^.+\\.ts?$": "ts-jest"
+      },
+    "moduleFileExtensions": [
+        "ts",
+        "js",
+        "json"
+    ],
+    "testRegex": "^.+\\.spec\\.ts$",
+    "testEnvironment": "node"
+}

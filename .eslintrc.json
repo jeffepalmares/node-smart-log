@@ -1,0 +1,67 @@
+  {
+    "extends": [
+      "plugin:jest/all",
+      "plugin:import/errors",
+      "plugin:import/warnings",
+      "plugin:import/typescript",
+      "plugin:@typescript-eslint/recommended"
+    ],
+    "plugins": ["jest", "@typescript-eslint"],
+    "root": true,
+    "globals": {},
+    "rules": {
+      "import/no-unresolved": "off",
+      "import/prefer-default-export": "off",
+      "import/no-extraneous-dependencies" : "off",
+      "import/extensions" : "off",
+      "interface-name-prefix" : "off",
+      "indent": ["off", 4],
+      "class-methods-use-this": "off",
+      "no-param-reassign" : "off",
+      "guard-for-in" : "off",
+      "import/namespace" : "off",
+      "import/no-duplicates" : "off",
+      "import/export" : "off",
+      "import/no-named-as-default" : "off",
+      "import/no-named-as-default-member" : "off",
+      "@typescript-eslint/no-explicit-any" : "off",
+      "jest/require-hook" : "off",
+      "prefer-rest-params" : "off",
+      "import/default" : "off",
+      "no-shadow" : "off",
+      "@typescript-eslint/ban-types" : "off",
+      "max-len": [
+        "warn",
+        {
+          "code": 200,
+          "ignoreComments": true,
+          "ignoreTrailingComments": true,
+          "ignoreUrls": true,
+          "ignoreStrings": true,
+          "ignoreTemplateLiterals": true
+        }
+      ],
+      "linebreak-style": 0,
+      "global-require": 0,
+      "eslint linebreak-style": [0, "error", "windows"]
+    },
+    "parser": "@typescript-eslint/parser",
+    "env": {},
+    "overrides": [],
+    "settings": {
+      "import/resolver": {
+        "alias": {
+          "map": [
+            ["@src", "./src"],
+            ["@tests", "./specs"]
+          ],
+          "extensions": [".ts", ".js"]
+        },
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+      }
+    }
+  }
+  
+  

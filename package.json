@@ -1,0 +1,38 @@
+{
+    "name": "smart-log",
+    "version": "1.0.0",
+    "description": "",
+    "main": "./lib/index.js",
+    "typings": "./lib/index.d.ts",
+    "dependencies": {
+        "context-local-storage": "github:jeffepalmares/context-local-storage",
+        "dotenv": "^8.2.0",
+        "typedi": "^0.10.0",
+        "uuid": "^7.0.2",
+        "v8-callsites": "^1.2.1",
+        "winston": "^3.2.1"
+    },
+    "devDependencies": {
+        "@types/jest": "^27.5.1",
+        "@types/node": "^13.13.26",
+        "@types/uuid": "^7.0.2",
+        "@typescript-eslint/eslint-plugin": "^5.26.0",
+        "@typescript-eslint/parser": "^5.26.0",
+        "eslint": "^8.16.0",
+        "eslint-config-node": "^4.1.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "eslint-plugin-jest": "^26.2.2",
+        "eslint-plugin-node": "^11.0.0",
+        "eslint-plugin-prettier": "^3.1.2",
+        "jest": "^28.1.0",
+        "prettier": "^2.0.2",
+        "ts-jest": "^28.0.3",
+        "typescript": "^4.7.2"
+    },
+    "scripts": {
+        "test": "./node_modules/.bin/jest --runInBand --detectOpenHandles --collectCoverage=true '/specs'"
+    },
+    "author": "Jefferson Cardoso",
+    "license": "ISC"
+}
