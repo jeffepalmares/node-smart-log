@@ -7,7 +7,6 @@
     "dependencies": {
         "context-local-storage": "github:jeffepalmares/context-local-storage",
         "dotenv": "^8.2.0",
-        "typedi": "^0.10.0",
         "uuid": "^7.0.2",
         "v8-callsites": "^1.2.1",
         "winston": "^3.2.1"
