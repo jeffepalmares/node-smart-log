@@ -1,5 +1,5 @@
 {
-    "name": "smart-log",
+    "name": "node-smart-log",
     "version": "1.0.0",
     "description": "",
     "main": "./lib/index.js",
