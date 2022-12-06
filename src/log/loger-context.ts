@@ -4,6 +4,23 @@ import { LoggerConfigs } from './logger-configs';
 
 export class LoggerContext {
     /**
+     * Get start a new isolated async storage context
+     * The function to be executed in a storage context
+     * @param next: {Function}
+     * 
+     * Optional CorrelationId to be set on this new log context
+     * @param correlationId: {string}
+     */
+    public static async startLoggerContext(next: Function, correlationId?: string): Promise<any> {
+        return StorageContext.run(async()=>{
+            StorageContext.scope();
+            if(correlationId){
+                LoggerContext.setCorrelationId(correlationId);
+            }
+            return next();
+        })
+    }
+    /**
      * Sets correlation id
      * The setted correlationId will be printed in every application log
      * @param correlationId: {string}
